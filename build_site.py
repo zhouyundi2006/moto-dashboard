@@ -234,7 +234,8 @@ def brand_page(b, d, siblings):
         ],
     }
 
-    title = "%s %s — models on sale and prices (250cc+, %d models) | 250cc+ Motorcycle Brand Landscape" % (name, b.get("nameEn") or "", len(models))
+    nameen = b.get("nameEn") or ""
+    title = ("%s — models on sale and prices (250cc+, %d models) | 250cc+ Motorcycle Brand Landscape" % (name, len(models)) if nameen in ("", name) else "%s / %s — models on sale and prices (250cc+, %d models) | 250cc+ Motorcycle Brand Landscape" % (name, nameen, len(models)))
     desc = "%s (%s): %d models on sale in China at 250cc+, priced %s, displacement %s. Each row links to the brand site or model database for verification." % (
         name, b.get("company") or "", len(models), price_band, cc_band,
     )
@@ -313,7 +314,7 @@ def brand_page(b, d, siblings):
         cat=esc(cat),
         logo=logo_html,
         name=esc(name),
-        en=esc(b.get("nameEn") or ""),
+        en=esc("" if (b.get("nameEn") or "")==name else (b.get("nameEn") or "")),
         company=esc(b.get("company") or ""),
         badges="".join(badges),
         n=len(models),
