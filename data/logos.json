@@ -1,0 +1,237 @@
+{
+  "cfmoto": {
+    "file": "assets/logos/cfmoto.svg",
+    "source": "https://cn.cfmoto.com/icons/logo.svg",
+    "status": "ok"
+  },
+  "voge": {
+    "file": "assets/logos/voge.webp",
+    "source": "https://qiniu.mfdemo.cn/longxin/img/home/home2-logo.webp",
+    "status": "ok",
+    "reason": "图片为VOGE无极官方标志(折线V图形+VOGE字样)；来源为隆鑫/无极官网项目CDN而非品牌主域名，建议后续替换为vogemotor.com官方直链"
+  },
+  "qjmotor": {
+    "file": "assets/logos/qjmotor.png",
+    "source": "https://www.qjmotor.com/img/logo.png",
+    "status": "ok"
+  },
+  "benelli": {
+    "file": "assets/logos/benelli.svg",
+    "source": "https://www.benelli.com/brand/horizontal-logo-black.svg",
+    "status": "ok"
+  },
+  "cyclone": {
+    "file": "assets/logos/cyclone.png",
+    "source": "https://www.cyclonemoto.com/_nuxt/img/logo.d190ded.png",
+    "status": "ok"
+  },
+  "haojue": {
+    "file": "assets/logos/haojue.png",
+    "source": "https://cdn.haojue.com/bocweb/web/img/logo.png?v=v49",
+    "status": "ok"
+  },
+  "benda": {
+    "file": "assets/logos/benda.png",
+    "source": "https://www.bendamotor.cn/output/0402223918.png?3e7ec8937362b05718ee3f95f79051f0",
+    "status": "ok"
+  },
+  "zontes": {
+    "file": "assets/logos/zontes.png",
+    "source": "https://www.zontes.com/App_Themes/ZontesSkin/images/ZontesLogo.png",
+    "status": "ok",
+    "reason": "白色字标需深色底"
+  },
+  "kove": {
+    "file": "assets/logos/kove.png",
+    "source": "https://cn.kovemoto.com/uploadfile/202308/5590280a3bd2.png",
+    "status": "ok"
+  },
+  "zxmoto": {
+    "file": "assets/logos/zxmoto.svg",
+    "source": "https://www.zxmoto.com/static/default/images/logo.svg",
+    "status": "ok"
+  },
+  "lifan": {
+    "file": "assets/logos/lifan.png",
+    "source": "https://motor.lifan.com/skin/default/images/logo4.png",
+    "status": "ok"
+  },
+  "dayang": {
+    "file": "assets/logos/dayang.png",
+    "source": "https://www.dayangmotorcycle.com/templates/default/images/logo.png",
+    "status": "ok"
+  },
+  "zongshen": {
+    "file": "assets/logos/zongshen.png",
+    "source": "https://zonsenmotor.com/_nuxt/img/logo.da4d79c.png",
+    "status": "ok"
+  },
+  "loncin": {
+    "file": "assets/logos/loncin.webp",
+    "source": "https://qiniu.mfdemo.cn/longxin/img/home/foot-logo.webp",
+    "status": "ok",
+    "reason": "隆鑫通用官网 loncinindustries.com 页脚官方 Logo（橙色图形+隆鑫通用+LONCIN 深色字标），为 LONCIN 企业标识而非 VOGE 无极；qiniu.mfdemo.cn/longxin 为该官网自用图片域名。选用深色字页脚版（白底可读），官网 header 另有 1539x336 高清白字标需深色底"
+  },
+  "jialing": {
+    "file": "assets/logos/jialing.gif",
+    "source": "https://www.cnpp100.com/uploads/allimg/c180429/1524b213032020-414F.gif",
+    "status": "ok",
+    "reason": "嘉陵 JIALING 官方品牌标志（蓝色椭圆图形+嘉陵工业+JIALING 字标，白底清晰）；来源为品牌100网品牌页收录的官方 Logo 图。jialing.com.cn 官网本环境不可达，moto188 嘉陵工业企业站 header 为「中国兵器+嘉陵工业」组合横幅，按要求未采用"
+  },
+  "shineray": {
+    "file": "assets/logos/shineray.png",
+    "source": "https://shineraymotor.com.cn/static/web/images/di_logo.png",
+    "status": "ok"
+  },
+  "changjiang": {
+    "file": "assets/logos/changjiang.png",
+    "source": "https://changjiang-europe.com/wp-content/uploads/2024/05/cropped-logo-changjiang2023.png",
+    "status": "ok",
+    "note": "长江(CHANGJIANG)品牌字标；主域名changjiangmotor.com当前502，改取官方欧洲品牌站同款Logo（同品牌标识）"
+  },
+  "souo": {
+    "file": "assets/logos/souo.png",
+    "source": "https://www.souomoto.com/img/home/logo_b.png",
+    "status": "ok",
+    "reason": "长城灵魂官网 souomoto.com 的官方品牌 Logo（SOUO 长城灵魂字标），从 header_footer.js 中 .h_logo 定位到 img/home/logo_b.png 黑色字版；透明底黑字，浅色卡片可读。官网另有 logo_w.png 白色字标需深色底"
+  },
+  "xiangshuai": {
+    "file": "assets/logos/xiangshuai.jpg",
+    "source": "https://mmbiz.qpic.cn/mmbiz_jpg/AKQqaINmY63Jj0wZJq1HA1WfXHiaGeJokMiaG2eBmJZILjFQIOnxjJY1wJTPzP9ktwrJB0YCJFicHZ48X9OvDfDUA/640?wx_fmt=jpeg",
+    "status": "ok",
+    "reason": "香帅重机官方盾形车标（XIANGSHUAI / HAN YANG 1890 字样+两斧一钳汉阳兵工厂厂徽图形），取自介绍该车标的微信公众号文章配图，为纯品牌 Logo 非车型照/海报；满版深色底浅色图形。注：品牌 2025 年升级为 Marshal 香帅机车，本图为升级前官方标志；官网 xiangshuaimotor.cn 本环境不可达"
+  },
+  "tuxing": {
+    "file": null,
+    "source": null,
+    "status": "missing",
+    "reason": "土星动力为奔达BENDA母公司，自身无独立在售两轮消费品牌Logo（奔达已单列收录），无独立官方Logo可抓"
+  },
+  "daye": {
+    "file": "assets/logos/daye.png",
+    "source": "http://m.kiden.cn/images/shmall/logo_new.png",
+    "status": "ok",
+    "reason": "启典 KIDEN 官方品牌字标(深灰 KIDEN+启典 字样，透明底 278x39)，取自启典官网移动站 m.kiden.cn 的 images/shmall/logo_new.png；启典为广东大冶旗下品牌，按本轮要求可以旗下品牌 Logo 代表企业主体。注：此非「广东大冶」企业行政标识；官网 www.kiden.cn/CH/Home/Default.aspx 另有导航 Logo(images/150150.jpg)。豪江 tayomotor.com/images/logo.png 与升仕 ZONTES 图标(ZTicon.png)均不符合本品牌口径，未采用"
+  },
+  "wuyang-honda": {
+    "file": "assets/logos/wuyang-honda.png",
+    "source": "https://www.wuyang-honda.com/favicon.ico",
+    "status": "ok",
+    "reason": "仅取得官网favicon.ico(红色圆形W标)，分辨率低；官网为SPA未暴露完整Logo直链"
+  },
+  "sundiro-honda": {
+    "file": "assets/logos/sundiro-honda.png",
+    "source": "https://www.honda-sundiro.com/assets/frontend/uploads/ico.ico",
+    "status": "ok"
+  },
+  "haojue-suzuki": {
+    "file": "assets/logos/haojue-suzuki.png",
+    "source": "https://cdn.haojue.com/bocweb//web/img/logo.png?v=v49",
+    "status": "ok"
+  },
+  "qingqi-suzuki": {
+    "file": null,
+    "source": null,
+    "status": "missing",
+    "reason": "官网 qssuzuki.com.cn/en.qssuzuki.com.cn 启用长亭WAF(HTTP 468)，本环境无法抓取；轻骑铃木标识以SUZUKI S标为主，官方Logo直链待用户本地网络获取"
+  },
+  "jianshe-yamaha": {
+    "file": null,
+    "source": null,
+    "status": "missing",
+    "reason": "官网 jym.com.cn 启用阿里云WAF(JS挑战)，本环境curl/第三方Logo服务均无法抓取；需从用户浏览器或本地网络获取 /images/logo.gif"
+  },
+  "kymco": {
+    "file": "assets/logos/kymco.png",
+    "source": "https://ckmco-video.oss-cn-shanghai.aliyuncs.com/2021/img/logo.png",
+    "status": "ok"
+  },
+  "sym": {
+    "file": "assets/logos/sym.png",
+    "source": "https://www.xsmt.com/public/images/logo.png",
+    "status": "ok"
+  },
+  "peugeot-motocycles": {
+    "file": "assets/logos/peugeot-motocycles.png",
+    "source": "https://www.peugeot-motocycles.com.cn/application/portal/view/public/images/logo.png",
+    "status": "ok"
+  },
+  "honda": {
+    "file": "assets/logos/honda.svg",
+    "source": "https://www.honda.com.cn/static/home/images/logo.svg",
+    "status": "ok"
+  },
+  "yamaha": {
+    "file": "assets/logos/yamaha.png",
+    "source": "https://global.yamaha-motor.com/shared/favicon/apple-touch-icon-180x180.png",
+    "status": "ok"
+  },
+  "kawasaki": {
+    "file": "assets/logos/kawasaki.jpg",
+    "source": "https://kmsh-origin.kawasaki-motors.cn/Content/Images/kawasaki-logo_global_preview_r02.jpg",
+    "status": "ok"
+  },
+  "suzuki": {
+    "file": "assets/logos/suzuki.png",
+    "source": "http://www.suzuki-china.com/img/logo.png",
+    "status": "ok"
+  },
+  "bmw": {
+    "file": "assets/logos/bmw.svg",
+    "source": "https://www.bmw-motorrad.com.cn/content/dam/bmwmotorradnsc/common/mnm/graphics/bmw_motorrad_logo.svg.asset.1672301077293.svg",
+    "status": "ok"
+  },
+  "ducati": {
+    "file": "assets/logos/ducati.png",
+    "source": "https://api.ducatichina.cn/uploads/ducati_id_c2bf9f8484.png",
+    "status": "ok"
+  },
+  "ktm": {
+    "file": "assets/logos/ktm.jpg",
+    "source": "https://www.ktm.com/content/dam/websites/ktm-com/language-masters/en/logo/37860_KTM_LogoPodium_orange_RGB.jpg",
+    "status": "ok",
+    "reason": "官方橙色底黑色KTM字标，满版橙色背景"
+  },
+  "triumph": {
+    "file": "assets/logos/triumph.svg",
+    "source": "https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/misc/misc-images/logo.svg?la=zh-CN&hash=227B012653665ECA979625C513D88A727C3C7362",
+    "status": "ok"
+  },
+  "harley-davidson": {
+    "file": "assets/logos/harley-davidson.png",
+    "source": "https://www.harley-davidson.cn/dam/content/dam/h-d/images/logo/Harley-Davidson-Logo-2026-2-RGB-BW-260225.png",
+    "status": "ok",
+    "reason": "官方黑白单色Bar&Shield盾徽，深色块配白字，浅色页面可读"
+  },
+  "aprilia": {
+    "file": "assets/logos/aprilia.webp",
+    "source": "http://www.aprilia.cn/static/aprilia/uploadfiles/image/ApriliaWhite.png",
+    "status": "ok",
+    "reason": "官方白色字标(ApriliaWhite.png)，透明/白底，在浅色页面不可读；前端建议深色底或文字兜底"
+  },
+  "piaggio-vespa": {
+    "file": "assets/logos/piaggio-vespa.webp",
+    "source": "https://www.vespa.cn/static/upload/2024/02/07/202402079564.webp",
+    "status": "ok"
+  },
+  "mv-agusta": {
+    "file": "assets/logos/mv-agusta.svg",
+    "source": "https://www.mvagusta.com/images/logo/logo-main.svg",
+    "status": "ok"
+  },
+  "indian": {
+    "file": "assets/logos/indian.png",
+    "source": "https://www.indianmotorcycle.cn/images/logo.png",
+    "status": "ok"
+  },
+  "husqvarna": {
+    "file": "assets/logos/husqvarna.png",
+    "source": "https://www.husqvarna-motorcycles.com/content/dam/websites/husqvarna-motorcycles-com/language-masters/en/logo/Husqvarna_Logo_1048x1048.png",
+    "status": "ok"
+  },
+  "royal-enfield": {
+    "file": "assets/logos/royal-enfield.webp",
+    "source": "https://www.royalenfield.com/content/dam/RE-Platform-Revamp/re-revamp-commons/logo.webp",
+    "status": "ok"
+  }
+}
