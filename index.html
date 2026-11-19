@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +27,15 @@
   "creator":{"@type":"Organization","name":"MOTO GRID","url":"https://github.com/moonquake2004/moto-dashboard"},
   "variableMeasured":["Official list price","Displacement (cc)","Body type","Brand segment","On-sale status"]}
 ]}
+</script>
+<script>
+(function(){try{
+  var p=new URLSearchParams(location.search).get("theme");
+  var raw=localStorage.getItem("moto-theme");var stored=raw?JSON.parse(raw):null;
+  var mode=(p==="light"||p==="dark")?p:((stored==="light"||stored==="dark"||stored==="auto")?stored:"auto");
+  var light=window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches;
+  document.documentElement.dataset.theme=mode==="auto"?(light?"light":"dark"):mode;
+}catch(e){}})();
 </script>
 <style>
 /* SECTION: theme */
@@ -608,6 +617,101 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
   *{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
 }
+/* ============================================================
+   LIGHT THEME — "racing paper" edition (dark theme untouched)
+   ============================================================ */
+html[data-theme="light"]{
+  --bg:#F2EEE6; --bg2:#EAE5DA; --surface:#FFFFFF; --surface2:#F7F3EB; --overlay:#FFFFFF;
+  --line:#DBD3C3; --line2:#C7BDA9;
+  --ink:#14171B; --muted:#555E69; --faint:#857F72;
+  --accent:#E23A10; --accent-soft:rgba(226,58,16,.10);
+  --blue:#175FBF; --amber:#A96300; --mint:#0B8A67; --red:#C93333;
+  --dom:#D9340C; --jv:#175FBF; --imp:#6A3FBF; --asia:#0B8A67; --cn:#A87C0A;
+  --logo-bg:#F4F0E7; --scrim:rgba(20,18,14,.45); --heat-rgb:226,58,16;
+  --shadow:0 1px 0 rgba(255,255,255,.9) inset, 0 18px 34px rgba(40,34,22,.07), 0 2px 6px rgba(40,34,22,.05);
+}
+html[data-theme="light"] body{
+  background:
+    radial-gradient(1100px 520px at 88% -12%, rgba(226,58,16,.10), transparent 62%),
+    radial-gradient(820px 460px at 48% -4%, rgba(23,95,191,.055), transparent 60%),
+    repeating-linear-gradient(118deg, rgba(20,22,26,.026) 0 1px, transparent 1px 11px),
+    var(--bg);
+}
+html[data-theme="light"] ::selection{background:rgba(226,58,16,.22);color:#14171B}
+html[data-theme="light"] .nav{
+  background:rgba(248,244,236,.88);
+  border-bottom:1px solid #D6CDBB;
+  box-shadow:0 1px 0 rgba(255,255,255,.75) inset, 0 8px 24px rgba(40,34,22,.06);
+}
+html[data-theme="light"] .brandmark{background:#14171B;color:#F7F3EB;padding:7px 11px 7px 9px;border-radius:6px;letter-spacing:.06em}
+html[data-theme="light"] .brandmark small{color:#FF6A3D}
+html[data-theme="light"] .brandmark .flag{border-color:#3A3F47}
+html[data-theme="light"] .nav-links a.on{background:#14171B;color:#F7F3EB;box-shadow:none}
+html[data-theme="light"] .nav-links a:hover{background:#FFFFFF;color:#14171B}
+html[data-theme="light"] .icon-btn{background:#FFFFFF;border-color:#D6CDBB}
+html[data-theme="light"] .icon-btn:hover{border-color:#14171B;color:#E23A10}
+
+/* hero: warm paper, orange slash, checkered timing strip */
+html[data-theme="light"] .hero{
+  background:
+    linear-gradient(112deg, rgba(226,58,16,0) 0 63%, rgba(226,58,16,.16) 63% 63.6%, rgba(226,58,16,0) 63.6%),
+    radial-gradient(760px 380px at 86% -8%, rgba(226,58,16,.13), transparent 66%),
+    linear-gradient(180deg,#F8F4EB 0%,#F2EEE6 62%,#EAE4D8 100%);
+}
+html[data-theme="light"] .hero:before{
+  opacity:1;
+  background:
+    repeating-linear-gradient(115deg, transparent 0 46px, rgba(20,22,26,.045) 46px 47px),
+    linear-gradient(90deg, transparent 0 74%, rgba(226,58,16,.06) 74% 100%);
+}
+html[data-theme="light"] .hero:after{
+  height:12px; opacity:.9;
+  background:
+    linear-gradient(90deg,#E23A10 0 22%,transparent 22%),
+    conic-gradient(#1B1E24 25%,transparent 0 50%,#1B1E24 0 75%,transparent 0) 0 0/12px 12px;
+  border-top:2px solid #14171B;
+}
+html[data-theme="light"] .hero h1{letter-spacing:-.035em}
+html[data-theme="light"] .hero h1 em{position:relative;display:inline-block}
+html[data-theme="light"] .hero .sub{color:#4E5760}
+html[data-theme="light"] .eyebrow{letter-spacing:.26em}
+html[data-theme="light"] .btn{border-radius:6px}
+html[data-theme="light"] .btn-primary{box-shadow:0 4px 0 #14171B, 0 10px 22px rgba(226,58,16,.22)}
+html[data-theme="light"] .btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 0 #14171B, 0 14px 26px rgba(226,58,16,.26)}
+html[data-theme="light"] .pill{border-radius:4px;background:#FFFFFF;border-color:#D6CDBB;font-size:11px;letter-spacing:.04em;text-transform:uppercase}
+html[data-theme="light"] .pill b{color:#14171B}
+
+/* telemetry panel: instrument cluster on white */
+html[data-theme="light"] .telemetry{border-radius:10px;border-color:#CFC5B2;box-shadow:0 4px 0 #14171B, 0 20px 40px rgba(40,34,22,.10)}
+html[data-theme="light"] .telemetry .t-head{background:#F7F3EB;border-bottom:1px solid #DDD4C3}
+html[data-theme="light"] .kpi{border-color:#E3DACA}
+html[data-theme="light"] .kpi .k-label{color:#7A7466;letter-spacing:.12em}
+html[data-theme="light"] .kpi .k-val{font-weight:900}
+html[data-theme="light"] .kpi.hot .k-val{color:#E23A10}
+
+/* panels: crisp white cards with a warm edge */
+html[data-theme="light"] .panel{border-radius:10px;border-color:#D8CFBD;box-shadow:var(--shadow)}
+html[data-theme="light"] .panel:hover{border-color:#C9BEA8}
+html[data-theme="light"] .sec-head h2{text-transform:uppercase;letter-spacing:.055em;font-size:19px}
+html[data-theme="light"] .sec-head h2:before{width:6px;height:22px;border-radius:1px;transform:skewX(-10deg);background:linear-gradient(180deg,#FF5A2A,#C92E08)}
+html[data-theme="light"] .sec-head .desc{color:#6B6455}
+html[data-theme="light"] .g-card{border-radius:8px;border-color:#DCD3C2;background:#FFFFFF}
+html[data-theme="light"] .g-card:hover{border-color:#14171B;transform:translateY(-3px);box-shadow:0 4px 0 #E23A10,0 18px 30px rgba(40,34,22,.09)}
+html[data-theme="light"] .g-logo{background:var(--logo-bg);border:1px solid #E7DFD0}
+html[data-theme="light"] .g-logo.dark{background:#14171B;border-color:#14171B}
+html[data-theme="light"] .chip-tab{border-radius:4px;background:#FFFFFF;border-color:#D8CFBD}
+html[data-theme="light"] .chip-tab:hover{border-color:#14171B}
+html[data-theme="light"] .chip-tab.on{background:#14171B;border-color:#14171B;color:#F7F3EB}
+html[data-theme="light"] .chip-tab.on .cnt{color:#FFB694}
+html[data-theme="light"] select,input{background:#FFFFFF;border-color:#D8CFBD}
+html[data-theme="light"] table.cmp thead th,html[data-theme="light"] thead th{background:#F4EFE5;color:#5C5545;letter-spacing:.06em}
+html[data-theme="light"] tr:hover td{background:#FBF7EF}
+html[data-theme="light"] .b-card,html[data-theme="light"] .rank-row{background:#FFFFFF}
+html[data-theme="light"] .b-card:hover,html[data-theme="light"] .rank-row:hover{border-color:#14171B}
+html[data-theme="light"] .link-btn{color:#4E5760}
+html[data-theme="light"] .link-btn:hover{color:#E23A10}
+html[data-theme="light"] .footer{border-top:1px solid #D6CDBB;background:#EDE8DD}
+
 </style>
 </head>
 <body>
@@ -626,7 +730,7 @@ table.mx th.rt[data-type]:hover{color:var(--ink)}
     </nav>
     <div class="nav-act">
       <button class="icon-btn" id="favNavBtn" title="Show saved brands" aria-label="Show saved brands">★</button>
-      <button class="icon-btn" id="themeBtn" title="Toggle light / dark theme" aria-label="Toggle light / dark theme">☾</button>
+      <button class="icon-btn" id="themeBtn" title="Theme: auto (follows system)" aria-label="Theme: auto">◐</button>
     </div>
   </div>
 </header>
@@ -901,11 +1005,28 @@ var urlParams=null;
 try{urlParams=new URLSearchParams(location.search)}catch(e){}
 var isFav = function(id){return state.favs.indexOf(id)>=0};
 
-/* SECTION: theme */
-var theme = store.get("moto-theme", null) || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light":"dark");
-function applyTheme(t){document.documentElement.dataset.theme=t;$("themeBtn").textContent=t==="dark"?"☾":"☀";store.set("moto-theme",t)}
-applyTheme(theme);
-$("themeBtn").addEventListener("click",function(){applyTheme(document.documentElement.dataset.theme==="dark"?"light":"dark")});
+/* SECTION: theme — Auto / Light / Dark; Auto follows the OS and is the default */
+var themeParam=(function(){try{return new URLSearchParams(location.search).get("theme")}catch(e){return null}})();
+var mql=window.matchMedia?window.matchMedia("(prefers-color-scheme: light)"):null;
+var themeMode=(themeParam==="light"||themeParam==="dark")?themeParam:(function(){var v=store.get("moto-theme",null);return (v==="light"||v==="dark"||v==="auto")?v:"auto"})();
+function resolvedTheme(mode){return mode==="auto"?((mql&&mql.matches)?"light":"dark"):mode}
+var THEME_NEXT={auto:"light",light:"dark",dark:"auto"};
+function applyTheme(mode,persist){
+  var t=resolvedTheme(mode);document.documentElement.dataset.theme=t;
+  var btn=$("themeBtn");
+  if(btn){btn.textContent=mode==="auto"?"◐":(t==="dark"?"☾":"☀");btn.title="Theme: "+mode+(mode==="auto"?" (follows system)":"")+" · click for "+THEME_NEXT[mode];btn.setAttribute("aria-label","Theme: "+mode)}
+  if(persist!==false)store.set("moto-theme",mode);
+}
+applyTheme(themeMode, themeParam?false:true);
+$("themeBtn").addEventListener("click",function(){
+  themeMode=THEME_NEXT[themeMode];
+  applyTheme(themeMode);
+  toast("Theme: "+themeMode+(themeMode==="auto"?" (follows system)":""));
+});
+if(mql){
+  var onSystemTheme=function(){if(themeMode==="auto")applyTheme("auto",false)};
+  if(mql.addEventListener)mql.addEventListener("change",onSystemTheme);else if(mql.addListener)mql.addListener(onSystemTheme);
+}
 
 /* SECTION: toast */
 var toastTimer=null;
@@ -1045,7 +1166,7 @@ function bars(elId,obj,order,colors,kind){
   $(elId).innerHTML=keys.filter(function(k){return obj[k]!=null}).map(function(k){
     var v=obj[k]||0,c=(colors&&(colors[k]||colors[keys.indexOf(k)]))||"var(--accent)";
     if(Array.isArray(colors))c=colors[keys.indexOf(k)]||"var(--accent)";
-'<div class="bar-row" role="button" tabindex="0" data-kind="'+kind+'" data-key="'+esc(k)+'" title="Filter: '+esc(k)+'"><div class="bl">'+esc(k)+'</div><div class="bar-track"><div class="bar-fill" data-w="'+(v/max*100).toFixed(1)+'" style="background:'+c+'"></div></div><div class="bv num">'+v+'</div></div>';
+    return '<div class="bar-row" role="button" tabindex="0" data-kind="'+kind+'" data-key="'+esc(k)+'" title="Filter: '+esc(k)+'"><div class="bl">'+esc(k)+'</div><div class="bar-track"><div class="bar-fill" data-w="'+(v/max*100).toFixed(1)+'" style="background:'+c+'"></div></div><div class="bv num">'+v+'</div></div>';
   }).join("");
 }
 bars("chartBucket",s.byBucket,BUCKETS,BUCKET_COLOR,"bucket");
